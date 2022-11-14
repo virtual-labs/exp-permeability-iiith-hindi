@@ -1,0 +1,73 @@
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "1. The constant head method is suitable for ____ type of soils.",
+			"answers": {
+				"a": "Coarse grained soils",
+				"b": "Fine grained soils",
+				"c": "Cohesive soils",
+				"d": "Cohesion less soils"
+			},
+			"explanations": {
+				"a": "It is possible to maintain a constant head and measure the required quantities for coarse grained soils.",
+				"b": "It is difficult to maintain a constant head and measure the required quantities for fine grained soils. The variable/falling head test is more suitable.",
+				"c": "It is difficult to maintain a constant head and measure the required quantities for cohesive soils. The variable/falling head test is more suitable.",
+				"d": "While it can be used for these kinds of soils, it is more suitable for another of the above options."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "a"
+		},
+		{
+			"question": "2. The variable head test is suitable for ____ type of soils.",
+			"answers": {
+				"a": "Coarse grained soils",
+				"b": "Fine grained soils",
+				"c": "Cohesive soils",
+				"d": "Cohesion less soils"
+			},
+			"explanations": {
+				"a": "It is difficult to measure the required quantities as water flows very quickly through highly pervious soils.",
+				"b": "Permeability is the measure of ability of a soil to allow the flow of water through its pores or voids. The variable head test is suitable for determining permeability of less pervious soils.",
+				"c": "While it can be used for these kinds of soils, it is more suitable for another of the above options.",
+				"d": "It is difficult to measure the required quantities as water flows very quickly through highly pervious soils."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "3. Which test is used to find the coefficient of permeability of a partially saturated soil?",
+			"answers": {
+				"a": "Constant head method",
+				"b": "Variable head test",
+				"c": "Capillary permeability test",
+				"d": "Consolidation test data"
+			},
+			"explanations": {
+				"a": "",
+				"b": "",
+				"c": "For partially saturated soils, the capillary test is used to determine the coefficient of permeability. It better estimates the flow through soil by considering seepage properties of soil.",
+				"d": ""
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "c"
+		},
+		{
+			"question": "4. The coefficient of permeability by the variable head test is given by which of the following formulas?",
+			"answers": {
+				"a": "a * l * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)",
+				"b": "a * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)",
+				"c": "a * l * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)",
+				"d": "a * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)"
+			},
+			"explanations": {
+				"a": "This is a direct formula question.",
+				"b": "The numerator is incorrect. One quantity is missing and the division order inside the ln part is incorrect.",
+				"c": "The numerator is incorrect. The division order inside the ln part is incorrect.",
+				"d": "The numerator is incorrect. One quantity is missing."
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "a"
+		}
+	]
+}

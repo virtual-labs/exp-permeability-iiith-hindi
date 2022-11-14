@@ -1,0 +1,107 @@
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "1. For clay soils, soils with greater void ratios have ____ permeability.",
+			"answers": {
+				"a": "Less",
+				"b": "More",
+				"c": "Equal",
+				"d": "Zero"
+			},
+			"explanations": {
+				"a": "In general, permeability increases with void ratio. But it is not applicable to all types of soils. For example, clay has a higher void ratio than any other types of soil but permeability for clays is very low. This is because the flow path through voids in case of clays is extremely small such that water cannot flow through this path easily.",
+				"b": "In general, permeability increases with void ratio. But it is not applicable to all types of soils. For example, clay has a higher void ratio than any other types of soil but permeability for clays is very low.",
+				"c": "There is a direct correlation between void ratio and permability and hence this cannot be the answer.",
+				"d": "This is nearly impossible to achieve."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "a"
+		},
+		{
+			"question": "2. Due to change in temperature, the viscosity (μ) of the liquid reduced by 40%. What is the change in the permeability of the soil?",
+			"answers": {
+				"a": "Reduces to 60%",
+				"b": "Reduces by 40%",
+				"c": "Reduces by 10%",
+				"d": "Both a & b"
+			},
+			"explanations": {
+				"a": "Coefficient of permeability is inversely proportional to the viscosity of the fluid. While this is the right answer, this is not the complete answer.",
+				"b": "Coefficient of permeability is inversely proportional to the viscosity of the fluid. While this is the right answer, this is not the complete answer.",
+				"c": "Coefficient of permeability is inversely proportional to the viscosity of the fluid. The relation is direct without any constants or scaling factors.",
+				"d": "Coefficient of permeability is inversely proportional to the viscosity of the fluid."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "d"
+		},
+		{
+			"question": "3. Permeable soil has a K (cm / sec) value of ____.",
+			"answers": {
+				"a": ">0.1",
+				"b": "<0.1",
+				"c": "=0",
+				"d": "None of the above"
+			},
+			"explanations": {
+				"a": "Greater the permeability value, the more permeable the soil will be.",
+				"b": "A soil cannot be noticably permeable if it has a very small permeability value.",
+				"c": "A soil cannot be permeable if it has a permeability value of 0.",
+				"d": "One of the above answers accurately describes the relation."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "a"
+		},
+		{
+			"question": "4. Coefficient of permeability is also called as which of the following?",
+			"answers": {
+				"a": "Energy of water",
+				"b": "Conductivity",
+				"c": "Hydraulic conductivity",
+				"d": "Potential of water"
+			},
+			"explanations": {
+				"a": "Coefficient of permeability of soil is a measure of the ease with which water flows through the soil and has nothing to do with the energy of the water.",
+				"b": "Conductivity is the measure of the ease at which an electric charge or heat can pass through a material whereas coefficient of permeability of soil is a measure of the ease with which water flows through the soil. Hence, this is incorrect.",
+				"c": "Coefficient of permeability of soil is a measure of the ease with which water flows through the soil. Hydraulic conductivity is defined as the ability of a porous medium to transmit water under saturated or nearly saturated conditions. Hence, coefficient of permeability of soil can also be called as hydraulic conductivity of soil.",
+				"d": "Coefficient of permeability of soil is a measure of the ease with which water flows through the soil and has nothing to do with the potential of the water."
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "c"
+		},
+		{
+			"question": "5. A constant head permeability test on a medium soil sample having a cross sectional area (A) of 7585 mm<sup>2</sup> yielded the following data: Distance between stand-pipes (L) = 100 mm, Constant head difference (h) = 70.4 mm, Quantity of water collected (Q) = 500 * 10<sup>3</sup> mm<sup>3</sup>, Time of collection (t) = 132 s. Determine the coefficient of permeability of the sand specimen.",
+			"answers": {
+				"a": "0.6",
+				"b": "0.7",
+				"c": "0.8",
+				"d": "0.9"
+			},
+			"explanations": {
+				"a": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = Q * L / (A * t * h).",
+				"b": "We obtain this answer by simply plugging in all the values in the formula: Coefficient of permeability, k = Q * L / (A * t * h).",
+				"c": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = Q * L / (A * t * h).",
+				"d": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = Q * L / (A * t * h)."
+			},
+			"difficulty": "advanced",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "6. In a falling head permeability test, a soil sample of 7585 mm<sup>2</sup> cross-section (A) and 210.2 mm length (L) was subjected to a flow of water from a stand-pipe having cross-sectional area (a) of 730 mm<sup>2</sup>. The stand-pipe level changed from 1650 mm (h<sub>1</sub>) to 550 mm (h<sub>2</sub>) above the reservoir datum during a time interval (t) of 182 sec. Determine the coefficient of permeability of the soil.",
+			"answers": {
+				"a": "0.12",
+				"b": "0.14",
+				"c": "0.16",
+				"d": "0.18"
+			},
+			"explanations": {
+				"a": "We obtain this answer by simply plugging in all the values in the formula: Coefficient of permeability, k = 2.303 * a * L * log (h<sub>1</sub> / h<sub>2</sub>) / (A * t).",
+				"b": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = 2.303 * a * L * log (h<sub>1</sub> / h<sub>2</sub>) / (A * t).",
+				"c": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = 2.303 * a * L * log (h<sub>1</sub> / h<sub>2</sub>) / (A * t).",
+				"d": "This answer is probably obtained by application of an incorrect formula or a calculation error. The formula to be used is: Coefficient of permeability, k = 2.303 * a * L * log (h<sub>1</sub> / h<sub>2</sub>) / (A * t)."
+			},
+			"difficulty": "advanced",
+			"correctAnswer": "a"
+		}
+	]
+}
