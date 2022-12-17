@@ -1,0 +1,553 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="" name="description">
+<meta content="" name="author">
+
+<meta name="experiment-short-name" content="permeability">
+<meta name="developer-institute" content="IIITH">
+<meta name="learning-unit" content="PERMEABILITY">
+<meta name="task-name" content="Pretest">
+
+<!-- For iPhone -->
+<meta name="msapplication-TileColor" content="#4076e0">
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#4076e0">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#4076e0">
+<title>वर्चुअल लैब्स</title>
+<link rel="shortcut icon" href="./assets/images/favicon.ico">
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+<link rel="stylesheet" href="./assets/css/vlabs-style.css">
+
+<script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<style>
+h1 {
+font-size: 1.8rem;
+}
+h2 {
+font-size: 1.4rem;
+}
+h3 {
+font-size: 1.2rem;
+}
+
+h2, h3 {
+font-weight: 800;
+}
+</style>
+</head>
+<body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+
+<header class="vlabs-header sticky-top bg-white">
+<nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+
+<button class="navbar-toggler px-4" type="button" onclick="toggle()">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="d-flex justify-content-center">
+<a href="https://vlab.co.in" class="navbar-brand">
+<img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+</a>
+</div>
+
+<div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center">
+<ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+<li class="nav-item px-2 m-1">
+<a href="https://vlab.co.in">होम</a>
+</li>
+<li class="nav-item px-2 m-1">
+<a href="https://vlab.co.in/participating-institutes">भागीदार</a>
+</li>
+<li class="nav-item px-2 m-1">
+<a href="https://vlab.co.in/contact-us">संपर्क</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+<div class="row d-flex justify-content-between">
+<div class="flex-column">
+
+<div class="row py-4 px-4 breadcrumbs">
+<a href="https://www.vlab.co.in/broad-area-civil-engineering/">
+सिविल इंजीनियरिंग
+</a>
+<span class="mx-2">
+<i aria-hidden="true" class="fa fa-angle-right"></i>
+</span>
+<a href="https://smfe-iiith.vlabs.ac.in">
+सॉयल मैकेनिक्स
+</a>
+<span class="mx-2">
+<i aria-hidden="true" class="fa fa-angle-right"></i>
+</span>
+<a href="https://smfe-iiith.vlabs.ac.in/List of experiments.html">
+प्रयोग
+</a>
+</div>
+
+</div>
+<div class="flex-column">
+<div id="plugin-bug-report"></div>
+<div id="plugin-rating"></div>
+</div>
+</div>
+<div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+<div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">
+<a href="https://vlab.co.in" class="navbar-brand">
+<img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+</a>
+</h5>
+<button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body nav-menu">
+<div>
+<div class="d-flex nav-menu-body">
+<a href="index.html" class="p-2 ">
+उद्देश्य
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="theory.html" class="p-2 ">
+सिद्धांत
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="pretest.html" class="p-2  current-item ">
+प्रीटेस्ट
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="procedure.html" class="p-2 ">
+कार्यप्रणाली
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="simulation.html" class="p-2 ">
+सिमुलेशन
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="posttest.html" class="p-2 ">
+पोस्टटेस्ट
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="references.html" class="p-2 ">
+सन्दर्भ
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="feedback.html" class="p-2 ">
+कार्यप्रणाली
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+<div>
+<div class="d-flex nav-menu-body">
+<a href="index.html" class="p-2 ">
+उद्देश्य
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="theory.html" class="p-2 ">
+सिद्धांत
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="pretest.html" class="p-2  current-item ">
+प्रीटेस्ट
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="procedure.html" class="p-2 ">
+कार्यप्रणाली
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="simulation.html" class="p-2 ">
+सिमुलेशन
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="posttest.html" class="p-2 ">
+पोस्टटेस्ट
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="references.html" class="p-2 ">
+सन्दर्भ
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+<div>
+<div class="d-flex nav-menu-body">
+<a href="feedback.html" class="p-2 ">
+प्रतिपुष्टि
+</a>
+
+</div>
+<div id="t-" class="collapse">
+<div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+</div>
+</div>
+</div>
+</div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+<div class="text-center fix-spacing">
+<h2 id="permeability">परमिएबिलिटी</h2>
+
+</div>
+<div id="difficulty-container" style="border-bottom: 1px solid #eaecef; padding-bottom: .3em; margin: 0" class="row">
+<div id="difficulty-label" class="col-12 col-md-3" style="display:none"><strong>कठिनाई का स्तर चुनें : </strong></div>
+<div class="form-check col-12 col-md-3" style="display:none">
+<input id="beginner" type="checkbox" value="">
+<label class="form-check-label" for="flexCheckDefault">
+<strong>शुरुआती</strong>
+</label>
+</div>
+<div class="form-check col-12 col-md-3" style="display:none">
+<input id="intermediate" type="checkbox" value="">
+<label class="form-check-label" for="flexCheckDefault">
+<strong>मध्यवर्ती</strong>
+</label>
+</div>
+<div class="form-check col-12 col-md-3" style="display:none">
+<input id="advanced" type="checkbox" value="">
+<label class="form-check-label" for="flexCheckDefault">
+<strong>उन्नत</strong>
+</label>
+</div>
+</div>
+
+<div id="quiz" class="version2">
+
+
+<div class="question beginner">
+1. क्ले सॉयल के लिए, अत्याधिक वॉयड रेशोज वाली मिट्टी में ____ परमिएबिलिटी होती है।
+</div>
+
+<div class="answers">
+<div id="answer0a">
+<label>
+<input type="radio" name="question0" value="a">
+a: कम
+</label>
+<a href="#" id="explanation0a" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer0b">
+<label>
+<input type="radio" name="question0" value="b">
+b: अधिक
+</label>
+<a href="#" id="explanation0b" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer0c">
+<label>
+<input type="radio" name="question0" value="c">
+c: बराबर
+</label>
+<a href="#" id="explanation0c" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer0d">
+<label>
+<input type="radio" name="question0" value="d">
+d: शून्य
+</label>
+<a href="#" id="explanation0d" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+</div>
+
+<div class="question beginner">
+2. तापमान में परिवर्तन के कारण तरल की विस्कोसिटी (μ)  40% कम हो गई।  मिट्टी की परमिएबिलिटी  में क्या परिवर्तन होता है ?
+</div>
+
+<div class="answers">
+<div id="answer1a">
+<label>
+<input type="radio" name="question1" value="a">
+a: 60% तक कम हो जाती है
+</label>
+<a href="#" id="explanation1a" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer1b">
+<label>
+<input type="radio" name="question1" value="b">
+b: 40% से कम हो जाती है
+</label>
+<a href="#" id="explanation1b" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer1c">
+<label>
+<input type="radio" name="question1" value="c">
+c: 10% से कम हो जाती है
+</label>
+<a href="#" id="explanation1c" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer1d">
+<label>
+<input type="radio" name="question1" value="d">
+d: a और b दोनों
+</label>
+<a href="#" id="explanation1d" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+</div>
+
+<div class="question intermediate">
+3. परमिएबिल सॉयल का K (cm / sec)  मूल्य  ____ होता है।
+</div>
+
+<div class="answers">
+<div id="answer2a">
+<label>
+<input type="radio" name="question2" value="a">
+a: >0.1
+</label>
+<a href="#" id="explanation2a" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer2b">
+<label>
+<input type="radio" name="question2" value="b">
+b: <0.1
+</label>
+<a href="#" id="explanation2b" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer2c">
+<label>
+<input type="radio" name="question2" value="c">
+c: =0
+</label>
+<a href="#" id="explanation2c" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer2d">
+<label>
+<input type="radio" name="question2" value="d">
+d:  उपरोक्त में से कोई भी नहीं
+</label>
+<a href="#" id="explanation2d" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+</div>
+
+<div class="question intermediate">
+4. कोएफिशिएंट ऑफ परमिएबिलिटी को निम्न में से क्या कहा जाता है?
+</div>
+
+<div class="answers">
+<div id="answer3a">
+<label>
+<input type="radio" name="question3" value="a">
+a: a * l * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)
+</label>
+<a href="#" id="explanation3a" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer3b">
+<label>
+<input type="radio" name="question3" value="b">
+b: a * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)
+</label>
+<a href="#" id="explanation3b" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer3c">
+<label>
+<input type="radio" name="question3" value="c">
+c: a * l * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)
+</label>
+<a href="#" id="explanation3c" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+<div id="answer3d">
+<label>
+<input type="radio" name="question3" value="d">
+d: a * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)
+</label>
+<a href="#" id="explanation3d" class="accordion" onclick="return false;">स्पष्टीकरण</a>
+</div>
+<p class="panel">स्पष्टीकरण</p>
+</div>
+</div>
+<button id="submit" class="btn btn-primary">5.  7585 मिमी <sup>2</sup> के क्रॉस सेक्शनल एरिया (A) वाले एक मध्यम मिट्टी के नमूने पर एक कॉन्स्टेंट हेड परमिएबिलिटी टेस्ट से निम्नलिखित डेटा प्राप्त हुआ: स्टैंड-पाइप के बीच की दूरी (L) = 100 mm, कॉन्स्टेंट हेड डिफरेंस ( h) = 70.4 mm, एकत्र किए गए पानी की मात्रा (Q) = 500 * 10<sup>3</sup> mm<sup>3</sup>, संग्रह का समय (t) = 132 s। सैंड स्पेसिमेन की कोएफिशिएंट ऑफ परमिएबिलिटी निर्धारित करें।</button>
+<div id="results"></div>
+</div>
+
+<script>
+const myQuestions = [{"question":"1. The constant head method is suitable for ____ type of soils.","answers":{"a":"Coarse grained soils","b":"Fine grained soils","c":"Cohesive soils","d":"Cohesion less soils"},"explanations":{"a":"It is possible to maintain a constant head and measure the required quantities for coarse grained soils.","b":"It is difficult to maintain a constant head and measure the required quantities for fine grained soils. The variable/falling head test is more suitable.","c":"It is difficult to maintain a constant head and measure the required quantities for cohesive soils. The variable/falling head test is more suitable.","d":"While it can be used for these kinds of soils, it is more suitable for another of the above options."},"difficulty":"beginner","correctAnswer":"a"},{"question":"2. The variable head test is suitable for ____ type of soils.","answers":{"a":"Coarse grained soils","b":"Fine grained soils","c":"Cohesive soils","d":"Cohesion less soils"},"explanations":{"a":"It is difficult to measure the required quantities as water flows very quickly through highly pervious soils.","b":"Permeability is the measure of ability of a soil to allow the flow of water through its pores or voids. The variable head test is suitable for determining permeability of less pervious soils.","c":"While it can be used for these kinds of soils, it is more suitable for another of the above options.","d":"It is difficult to measure the required quantities as water flows very quickly through highly pervious soils."},"difficulty":"beginner","correctAnswer":"b"},{"question":"3. Which test is used to find the coefficient of permeability of a partially saturated soil?","answers":{"a":"Constant head method","b":"Variable head test","c":"Capillary permeability test","d":"Consolidation test data"},"explanations":{"a":"","b":"","c":"For partially saturated soils, the capillary test is used to determine the coefficient of permeability. It better estimates the flow through soil by considering seepage properties of soil.","d":""},"difficulty":"intermediate","correctAnswer":"c"},{"question":"4. The coefficient of permeability by the variable head test is given by which of the following formulas?","answers":{"a":"a * l * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)","b":"a * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)","c":"a * l * ln (h<sub>2</sub> / h<sub>1</sub>) / (A * t)","d":"a * ln (h<sub>1</sub> / h<sub>2</sub>) / (A * t)"},"explanations":{"a":"This is a direct formula question.","b":"The numerator is incorrect. One quantity is missing and the division order inside the ln part is incorrect.","c":"The numerator is incorrect. The division order inside the ln part is incorrect.","d":"The numerator is incorrect. One quantity is missing."},"difficulty":"intermediate","correctAnswer":"a"}];
+</script>
+<script src="./assets/js/assesment_v2.js"></script>
+</div>
+</div>
+<footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+<div class="row px-5 mx-0">
+<div class="col d-flex flex-column">
+<span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">a: 0.6</span>
+<a href="https://www.sakshat.ac.in/" class="text-light">स्पष्टीकरण</a>
+<a href="http://outreach.vlabs.ac.in/" class="text-light">स्पष्टीकरण</a>
+<a href="https://vlab.co.in/faq" class="text-light">b: 0.7</a>
+</div>
+<div class="col d-flex flex-column">
+<span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">स्पष्टीकरण</span>
+<span> स्पष्टीकरण </span>
+<span> c: 0.8 </span>
+</div>
+<div class="col d-flex flex-column">
+<span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">स्पष्टीकरण</span>
+<div class="social-links">
+<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+<i class="fa fa-twitter"></i>
+</a>
+<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+<i class="fa fa-facebook"></i>
+</a>
+<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+<i class="fa fa-youtube"></i>
+</a>
+<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+<i class="fa fa-linkedin"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+<a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> स्पष्टीकरण </a>
+d: 0.9nbsp;d: 0.9amp;d: 0.9nbsp;
+<a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> स्पष्टीकरण </a>
+</div>
+</footer>
+
+<script src="./assets/js/toggleSidebar.js"></script>
+
+
+
+</body></html>
